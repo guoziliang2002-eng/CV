@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        郭子亮个人简历
+    </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- ===== 开屏：头像+基本信息，停留3秒 ===== -->
+    <div class="splash-screen" id="splash">
+        <div class="splash-content">
+            <img src="image/picture.JPG" alt="头像" class="avatar-large" id="avatarPlaceholder">
+            <h1 class="splash-name">郭子亮</h1>
+            <div class="splash-bio"> 华中师范大学 · 香港浸会大学</div>
+            <div class="progress-ring"></div>
+            <p style="color:#94a3b8; margin-top: 15px;">Thank you for your time</p>
+        </div>
+    </div>
+
+    <!-- ===== 主页面 ===== -->
+    <div class="main-page" id="mainPage">
+        <!-- 左侧滑动目录线 -->
+        <div class="section-nav">
+            <div class="nav-line">
+                <div class="nav-progress" id="navProgress"></div>
+            </div>
+            <div class="nav-dots">
+                <div class="nav-dot" data-target="uni" id="dotUni">
+                    <span class="dot-tooltip">院校信息</span>
+                </div>
+                <div class="nav-dot" data-target="intern" id="dotIntern">
+                    <span class="dot-tooltip">实习经历</span>
+                </div>
+                <div class="nav-dot" data-target="campus" id="dotCampus">
+                    <span class="dot-tooltip">在校经历</span>
+                </div>
+                <div class="nav-dot" data-target="works" id="dotWorks">
+                    <span class="dot-tooltip">作品展示</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧主要内容区域 -->
+        <div class="content-wrapper">
+            <!-- 院校专业基本信息块 -->
+            <section id="uni" class="section-block uni-header">
+                <img src="image/picture.JPG" width="20%" height="20%" class="my-photo">
+                <h1 class="uni-name">郭子亮</h1>
+                <div class="uni-major">
+                    <span>🎓 香港浸会大学 · 硕士 · 人工智能与数字媒体</span>
+                    <span class="uni-badge">2025 - 2026</span>
+                    <span>🎓 华中师范大学 · 学士 · 数字媒体技术</span>
+                    <span class="uni-badge">2020 - 2024</span>
+                </div>
+                <div class="uni-desc">
+                    <span>📍 中国 · 香港</span>
+                    <span>📧 1913716043@qq.com</span>
+                    <span>☎️ 15338912130</span>
+                </div>
+                <p style="margin-top: 20px; color: #334155; max-width: 700px;">
+                    📖相关课程：<br>
+                    SQL、数字媒体推荐系统、自然语言处理与大语言模型、生成式人工智能、社交媒体营销、游戏制作、剧本创作、摄影摄像等<br>
+                    <br>
+                    🔠语言能力：<br>
+                    大学英语六级、雅思英语6.5<br>
+                    <br>
+                    🖥️相关技能：<br>
+                    SQL、视频策划及制作、平面设计、摄影<br>
+                    <br>
+                    🏆荣誉奖项：<br>
+                    计算机设计大赛省二等奖、先进个人    
+                </p>
+            </section>
+
+            <!-- 目录卡片 -->
+            <div class="chapter-toc">
+                <div class="toc-title">
+                    <span>📑 内容目录</span>
+                </div>
+                <div class="toc-grid">
+                    <a href="#intern" class="toc-item">💼 实习经历</a>
+                    <a href="#campus" class="toc-item">📚 在校经历</a>
+                    <a href="#works" class="toc-item">🎨 作品展示</a>
+                </div>
+            </div>
+
+            <!-- 实习经历 -->
+            <section id="intern" class="section-block">
+                <h2 class="section-title">💼 实习经历</h2>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">海南广电新闻频道 · 新媒体运营实习生</span>
+                        <span class="exp-date">2023.06 - 2023.08</span>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            <b>▪️选题策划：</b><br>
+                            监测国内外及本地时事热点，策划国际新闻、社会新闻、本台新闻精剪、本地天气预报、节气健康科普等专栏，单条抖音最高播放量<b>200W+</b>。<br>
+                            <b>▪️脚本撰写：</b><br>
+                            基于用户需求和选题特点撰写短视频脚本。<br>
+                            <b>▪️视频剪辑：</b><br>
+                            使用剪映将拍摄、收集好的素材进行剪辑包装，包括剪辑、调色、特效、字幕设计及节奏把控，实习期间独立剪辑100+条。<br>
+                            <b>▪️数据回收：</b><br>
+                            回收分析各平台视频播放数据及推文浏览数据。<br>
+                            <b>▪️公众号运营：</b><br>
+                            结合时事新闻和气象局预告为官方微信公众号撰写、排版推文，单篇阅读量<b>2W+</b>。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">昕投（海口市）贸易有限责任公司 · 短视频编导实习生</span>
+                        <span class="exp-date">2024.10 - 2025.01</span>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            <b>▪️账号运营：</b><br>
+                            为提升产品曝光和直播间热度，运营“小米之家”“小米小时达”等抖音账号，策划隐藏功能科普、新品宣传等选题，拍摄剪辑视频600+条，单条最高播放量<b>100W+</b>，实习期间推动单个账号涨粉<b>3W+</b>。<br>
+                            <b>▪️平面设计：</b><br>
+                            为宣传公司啤酒产品，拍摄、制作产品宣传图，突出产品气泡绵密等卖点，支持产品销售。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <span class="exp-company">深圳梵尼诗文化科技有限公司 · 新媒体运营实习生</span>
+                        <span class="exp-date">2025.10 - 2025.11</span>
+                    </div>
+                    <div class="exp-desc">
+                        <p>
+                            <b>▪️AI辅助内容与创意生产：</b><br>
+                            熟练运用AI工具矩阵赋能工作流，通过精细化提示词工程反复调试，确保生成的各类文案精准匹配业务需求与品牌调性。<br>
+                            <b>▪️自动化视频处理：</b><br>
+                            利用即创平台实现视频素材的批量剪辑与智能合成，显著提升视频内容产出效率。<br>
+                            <b>▪️视觉内容生成：</b><br>
+                            探索AIGC在视觉领域的应用，使用Gemini生成高质量产品场景图，并尝试运用即梦、可灵等工具辅助生成产品宣传视频素材，为团队提供多元化的创意参考。<br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 在校经历 -->
+            <section id="campus" class="section-block">
+                <h2 class="section-title">📚 在校经历</h2>
+                <div class="edu-list">
+                    <div class="edu-item">
+                        <div class="edu-year">2022</div>
+                        <div class="edu-detail">
+                            <h3>木犀团队（校内互联网技术团队） · 产品组</h3>
+                            <p>
+                                <b>▪️产品策划：</b><br>
+                                收集校内用户需求及使用反馈，迭代及维护团队现有产品，撰写PRD文档、绘制产品原型图，协同设计组和技术组成员实现产品落地。针对具体时间点如期末出分、年终总结、新学期选课等，策划不同产品的限时活动，例如<b>华师匣子（校内信息综合APP）</b>—— 期末分数离散程度查询、年终图书馆使用情况；<b>华师课栈（校内课程交流小程序）</b>—— 课程点评或查询他人点评。<br>
+                                <b>▪️内容运营：</b><br>
+                                结合校园热点和用户需求，策划街头穿搭、年终报告等原创推文20+篇，配合地推引导校园用户关注，推动团队公众号2个月涨粉<b>800+</b>，单篇最高阅读量<b>1.2w</b>。<br>
+                                <b>▪️活动策划：</b><br>
+                                为促进多校学生联谊，策划“小幸运”女生节活动。前期基于需求调研设计互动玩法，中期协调设计、前端搭建页面，后期联合其他高校团队和自有渠道进行推广，活动参与人数<b>1000+</b>。<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <div class="edu-year">2022</div>
+                        <div class="edu-detail">
+                            <h3>华中师范大学学工部 · 网络技术中心主任</h3>
+                            <p>
+                                ▪️作为木犀团队与学校之间的沟通桥梁，协助学校完成相关维护工作，助力团队产品<b>华师匣子</b>获取校内信息，成为学校官方产品。<br>
+                                ▪️获2022年度“先进个人”奖项。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== 全新作品集展示区 ===== -->
+            <section id="works" class="section-block">
+                <h2 class="section-title">🎨 作品展示</h2>
+                
+                <!-- ===== 摄影作品 - 3D无边框轮播 ===== -->
+                <div class="photo-section">
+                    <h3 class="subsection-title">📷 摄影作品</h3>
+                    
+                    <div class="carousel-3d-container">
+                        <!-- 左箭头 -->
+                        <button class="carousel-arrow left-arrow" id="prevPhoto">←</button>
+                        
+                        <!-- 3D轮播主体 -->
+                        <div class="carousel-3d-wrapper">
+                            <div class="carousel-3d-track" id="photoTrack">
+                                <!-- 摄影作品1 - 请替换为你的图片 -->
+                                <div class="carousel-item">
+                                    <img src="image/001.jpg" alt="摄影作品1" 
+                                        data-full="images/photo-1-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品2 -->
+                                <div class="carousel-item">
+                                    <img src="image/002.jpg" alt="摄影作品2" 
+                                        data-full="images/photo-2-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品7 -->
+                                <div class="carousel-item">
+                                    <img src="image/007.jpg" alt="摄影作品3" 
+                                        data-full="images/photo-3-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品4 -->
+                                <div class="carousel-item">
+                                    <img src="image/004.jpg" alt="摄影作品4" 
+                                        data-full="images/photo-4-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品5 -->
+                                <div class="carousel-item">
+                                    <img src="image/005.jpg" alt="摄影作品5" 
+                                        data-full="images/photo-5-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品6 -->
+                                <div class="carousel-item">
+                                    <img src="image/006.jpg" alt="摄影作品6" 
+                                        data-full="images/photo-6-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品8 -->
+                                <div class="carousel-item">
+                                    <img src="image/008.jpg" alt="摄影作品8" 
+                                        data-full="images/photo-8-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品9 -->
+                                <div class="carousel-item">
+                                    <img src="image/009.jpg" alt="摄影作品9" 
+                                        data-full="images/photo-9-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品10 -->
+                                <div class="carousel-item">
+                                    <img src="image/010.jpg" alt="摄影作品10" 
+                                        data-full="images/photo-10-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品11 -->
+                                <div class="carousel-item">
+                                    <img src="image/011.png" alt="摄影作品11" 
+                                        data-full="images/photo-11-large.jpg"
+                                        class="photo-img">
+                                </div>
+                                <!-- 摄影作品12 -->
+                                <div class="carousel-item">
+                                    <img src="image/012.png" alt="摄影作品12" 
+                                        data-full="images/photo-12-large.jpg"
+                                        class="photo-img">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 右箭头 -->
+                        <button class="carousel-arrow right-arrow" id="nextPhoto">→</button>
+                    </div>
+                    
+                    <!-- 轮播指示点 -->
+                    <div class="carousel-dots" id="photoDots"></div>
+                </div>
+                
+                <!-- ===== 视频作品集 ===== -->
+                <div class="video-section">
+                    <h3 class="subsection-title">🎬 视频作品</h3>
+                    
+                    <div class="video-grid">
+                        <!-- 视频作品1 -->
+                        <div class="video-card" onclick="openVideoModal('video/chenxiang-1.MP4')">
+                            <img src="image/cover-001.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/chenxiang-1.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">02:28</div>
+                        </div>
+                        
+                        <!-- 视频作品2 -->
+                        <div class="video-card" onclick="openVideoModal('video/chenxiang-2.MP4')">
+                            <img src="image/cover-002.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/chenxiang-2.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">02:29</div>
+                        </div>
+                        
+                        <!-- 视频作品3 -->
+                        <div class="video-card" onclick="openVideoModal('video/guoyuzi.mp4')">
+                            <img src="image/cover-003.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/guoyuzi.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">01:53</div>
+                        </div>
+                        
+                        <!-- 视频作品4 -->
+                        <div class="video-card" onclick="openVideoModal('video/dongao.mp4')">
+                            <img src="image/cover-004.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/dongao.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">03:09</div>
+                        </div>
+
+                        <!-- 视频作品5 -->
+                        <div class="video-card" onclick="openVideoModal('video/dongao.mp4')">
+                            <img src="image/cover-005.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/wenzimailuo.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">03:09</div>
+                        </div>
+                        
+                        <!-- 视频作品6 -->
+                        <div class="video-card" onclick="openVideoModal('video/jiuhuo.mp4')">
+                            <img src="image/cover-006.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/jiuhuo.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">01:52</div>
+                        </div>
+                        
+
+                        <!-- 视频作品7 -->
+                        <div class="video-card" onclick="openVideoModal('video/guaiqiwuyu001.mp4')">
+                            <img src="image/cover-007.jpg" class="video-cover">
+                            <video class="video-thumbnail" preload="metadata" src="video/guaiqiwuyu001.mp4"></video>
+                            <div class="video-play-icon">▶</div>
+                            <div class="video-duration">01:04</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== 图片放大模态框 ===== -->
+            <div class="media-modal" id="photoModal" onclick="closeMediaModal()">
+                <span class="close-modal">&times;</span>
+                <div class="modal-content photo-content" onclick="event.stopPropagation()">
+                    <img id="expandedPhoto" src="" alt="放大的摄影作品">
+                </div>
+            </div>
+
+            <!-- ===== 视频播放模态框 ===== -->
+            <div class="media-modal" id="videoModal" onclick="closeMediaModal()">
+                <span class="close-modal">&times;</span>
+                <div class="modal-content video-content" onclick="event.stopPropagation()">
+                    <video id="expandedVideo" controls autoplay>
+                        <source src="" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+
+    <script>
+        (function() {
+            // 开屏3秒后自动隐藏，由CSS动画处理，但为保证隐藏后页面交互正常
+            // 无需额外JS，已在CSS定义animation: slideUp ... forwards
+
+            // 左侧目录线 + 高亮圆点 + 点击跳转
+            const sections = [
+                { id: 'uni', dot: document.getElementById('dotUni') },
+                { id: 'intern', dot: document.getElementById('dotIntern') },
+                { id: 'campus', dot: document.getElementById('dotCampus') },
+                { id: 'works', dot: document.getElementById('dotWorks') }
+            ];
+
+            const navProgress = document.getElementById('navProgress');
+
+            // 更新目录线高度和圆点激活状态
+            function updateNav() {
+                const scrollY = window.scrollY;
+                const winHeight = window.innerHeight;
+                const docHeight = document.documentElement.scrollHeight;
+
+                // 计算整体进度 (基于可滚动区域)
+                const maxScroll = docHeight - winHeight;
+                const progressPercent = maxScroll > 0 ? (scrollY / maxScroll) * 100 : 0;
+                navProgress.style.height = progressPercent + '%';
+
+                // 找到当前可视区域中间的区块对应的圆点
+                let activeId = 'uni';
+                let minDistance = Infinity;
+
+                sections.forEach(item => {
+                    const el = document.getElementById(item.id);
+                    if (!el) return;
+                    const rect = el.getBoundingClientRect();
+                    // 元素中心到视口中心的距离
+                    const distance = Math.abs(rect.top + rect.height/2 - winHeight/2);
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        activeId = item.id;
+                    }
+                });
+
+                // 更新圆点active样式
+                sections.forEach(item => {
+                    if (item.dot) {
+                        if (item.id === activeId) {
+                            item.dot.classList.add('active');
+                        } else {
+                            item.dot.classList.remove('active');
+                        }
+                    }
+                });
+            }
+
+            // 点击圆点跳转
+            sections.forEach(item => {
+                if (item.dot) {
+                    item.dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetEl = document.getElementById(item.id);
+                        if (targetEl) {
+                            targetEl.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    });
+                }
+            });
+
+            window.addEventListener('scroll', updateNav);
+            window.addEventListener('resize', updateNav);
+            setTimeout(updateNav, 200); // 初始更新
+
+            // ===== 等待DOM加载完成 =====
+            document.addEventListener('DOMContentLoaded', function() {
+                initPhotoCarousel();
+                initVideoCards();
+                initModals();
+            });
+
+            // ===== 摄影轮播初始化 =====
+            function initPhotoCarousel() {
+                const track = document.getElementById('photoTrack');
+                const items = document.querySelectorAll('.carousel-item');
+                const prevBtn = document.getElementById('prevPhoto');
+                const nextBtn = document.getElementById('nextPhoto');
+                
+                if (!track || items.length === 0) return;
+                
+                let currentIndex = 0;
+                const totalItems = items.length;
+                let autoRotateInterval;
+                
+                // 创建指示点
+                function createDots() {
+                    const dotsContainer = document.getElementById('photoDots');
+                    if (!dotsContainer) return;
+                    
+                    dotsContainer.innerHTML = '';
+                    
+                    for (let i = 0; i < totalItems; i++) {
+                        const dot = document.createElement('span');
+                        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+                        dot.addEventListener('click', () => goToSlide(i));
+                        dotsContainer.appendChild(dot);
+                    }
+                }
+                
+                // 更新图片类
+                function updateClasses() {
+                    items.forEach((item, index) => {
+                        item.classList.remove('active', 'prev-active', 'next-active', 'far-prev', 'far-next', 'farthest');
+                        
+                        let diff = index - currentIndex;
+                        if (diff > totalItems / 2) diff -= totalItems;
+                        if (diff < -totalItems / 2) diff += totalItems;
+                        
+                        if (diff === 0) {
+                            item.classList.add('active');
+                        } else if (diff === -1 || diff === totalItems - 1) {
+                            item.classList.add('prev-active');
+                        } else if (diff === 1 || diff === -(totalItems - 1)) {
+                            item.classList.add('next-active');
+                        } else if (diff === -2 || diff === -(totalItems - 2)) {
+                            item.classList.add('far-prev');
+                        } else if (diff === 2 || diff === totalItems - 2) {
+                            item.classList.add('far-next');
+                        } else {
+                            item.classList.add('farthest');
+                        }
+                    });
+                    
+                    updateDots();
+                }
+                
+                // 更新指示点
+                function updateDots() {
+                    const dots = document.querySelectorAll('.carousel-dot');
+                    dots.forEach((dot, index) => {
+                        if (index === currentIndex) {
+                            dot.classList.add('active');
+                        } else {
+                            dot.classList.remove('active');
+                        }
+                    });
+                }
+                
+                // 跳转
+                function goToSlide(index) {
+                    currentIndex = (index + totalItems) % totalItems;
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    updateClasses();
+                }
+                
+                // 下一张/上一张
+                function rotate(direction) {
+                    if (direction === 'next') {
+                        currentIndex = (currentIndex + 1) % totalItems;
+                    } else {
+                        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                    }
+                    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                    updateClasses();
+                    resetAutoRotate();
+                }
+                
+                // 自动轮播
+                function startAutoRotate() {
+                    autoRotateInterval = setInterval(() => rotate('next'), 4000);
+                }
+                
+                function resetAutoRotate() {
+                    clearInterval(autoRotateInterval);
+                    startAutoRotate();
+                }
+                
+                // 绑定事件
+                if (prevBtn) prevBtn.addEventListener('click', () => rotate('prev'));
+                if (nextBtn) nextBtn.addEventListener('click', () => rotate('next'));
+                
+                // 鼠标悬停暂停
+                const wrapper = document.querySelector('.carousel-3d-wrapper');
+                if (wrapper) {
+                    wrapper.addEventListener('mouseenter', () => clearInterval(autoRotateInterval));
+                    wrapper.addEventListener('mouseleave', startAutoRotate);
+                }
+                
+                // 点击图片放大
+                items.forEach(item => {
+                    item.addEventListener('click', function() {
+                        const img = this.querySelector('img');
+                        if (img && img.src) {
+                            openPhotoModal(img.src);
+                            clearInterval(autoRotateInterval);
+                        }
+                    });
+                });
+                
+                // 初始化
+                createDots();
+                updateClasses();
+                startAutoRotate();
+                
+                // 暴露方法
+                window.goToPhotoSlide = goToSlide;
+            }
+
+            // ===== 视频卡片初始化 =====
+            function initVideoCards() {
+                const videoCards = document.querySelectorAll('.video-card');
+                
+                videoCards.forEach(card => {
+                    const video = card.querySelector('video');
+                    if (!video) return;
+                    
+                    // 获取视频时长（当元数据加载后）
+                    video.addEventListener('loadedmetadata', function() {
+                        const minutes = Math.floor(video.duration / 60);
+                        const seconds = Math.floor(video.duration % 60).toString().padStart(2, '0');
+                        const durationEl = card.querySelector('.video-duration');
+                        if (durationEl) {
+                            durationEl.textContent = `${minutes}:${seconds}`;
+                        }
+                    });
+                });
+            }
+
+            // ===== 模态框功能 =====
+            function initModals() {
+                // 点击关闭按钮或背景关闭
+                const closeButtons = document.querySelectorAll('.close-modal');
+                closeButtons.forEach(btn => {
+                    btn.addEventListener('click', closeMediaModal);
+                });
+            }
+
+            // 打开图片模态框
+            window.openPhotoModal = function(imgSrc) {
+                const modal = document.getElementById('photoModal');
+                const expandedImg = document.getElementById('expandedPhoto');
+                
+                if (!modal || !expandedImg) return;
+                
+                expandedImg.src = imgSrc;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            };
+
+            // 打开视频模态框
+            window.openVideoModal = function(videoSrc) {
+                const modal = document.getElementById('videoModal');
+                const video = document.getElementById('expandedVideo');
+                const source = video.querySelector('source');
+                
+                if (!modal || !video) return;
+                
+                // 更新视频源
+                if (source) {
+                    source.src = videoSrc;
+                } else {
+                    video.innerHTML = `<source src="${videoSrc}" type="video/mp4">`;
+                }
+                
+                video.load(); // 重新加载视频
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                
+                // 自动播放
+                video.play().catch(e => console.log('自动播放失败:', e));
+            };
+
+            // 关闭所有模态框
+            window.closeMediaModal = function() {
+                const photoModal = document.getElementById('photoModal');
+                const videoModal = document.getElementById('videoModal');
+                const video = document.getElementById('expandedVideo');
+                
+                if (photoModal) photoModal.style.display = 'none';
+                if (videoModal) {
+                    videoModal.style.display = 'none';
+                    if (video) {
+                        video.pause();
+                        video.currentTime = 0;
+                    }
+                }
+                
+                document.body.style.overflow = '';
+                
+                // 重启轮播
+                if (window.restartCarousel) {
+                    window.restartCarousel();
+                }
+            };
+
+            // 键盘支持
+            document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeMediaModal();
+    }
+});
+
+        })();
+    </script>
+</body>
+</html>
