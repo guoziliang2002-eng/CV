@@ -680,4 +680,190 @@
     }
 }
 
+/* ===== 移动端响应式适配 ===== */
+
+/* 小屏设备（手机，小于 768px） */
+@media screen and (max-width: 768px) {
+    /* 1. 调整左侧目录线 - 移到右侧或隐藏 */
+    .section-nav {
+        left: auto;
+        right: 15px;
+        transform: translateY(-50%) scale(0.8);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 5px;
+        border-radius: 30px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    
+    .nav-line {
+        height: 150px; /* 缩短目录线 */
+    }
+    
+    .dot-tooltip {
+        left: auto;
+        right: 30px;
+        transform: translateY(-50%) translateX(0);
+    }
+    
+    /* 2. 调整主内容区域 - 减小左边距 */
+    .content-wrapper {
+        padding: 20px 15px 20px 60px;
+        max-width: 100%;
+    }
+    
+    /* 3. 调整头部信息 */
+    .uni-header {
+        padding: 25px;
+    }
+    
+    .uni-name {
+        font-size: 1.8rem; /* 减小姓名大小 */
+    }
+    
+    .uni-major {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .uni-desc {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* 4. 目录卡片 - 改为垂直排列 */
+    .toc-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .toc-item {
+        width: 100%;
+    }
+    
+    /* 5. 实习经历卡片 */
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .exp-company {
+        font-size: 1.2rem;
+    }
+    
+    /* 6. 在校经历卡片 */
+    .edu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .edu-year {
+        align-self: flex-start;
+    }
+    
+    /* 7. 3D轮播 - 缩小尺寸 */
+    .carousel-3d-container {
+        height: 250px; /* 手机版高度 */
+        gap: 5px;
+    }
+    
+    .carousel-3d-wrapper {
+        width: 300px; /* 手机版宽度 */
+    }
+    
+    .carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    /* 8. 视频网格 - 改为单列 */
+    .video-grid {
+        grid-template-columns: 1fr; /* 单列显示 */
+        gap: 20px;
+    }
+    
+    /* 9. 字体大小调整 */
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .subsection-title {
+        font-size: 1.2rem;
+    }
+    
+    p, .exp-desc {
+        font-size: 0.9rem;
+    }
+    
+    /* 10. 开屏画面调整 */
+    .avatar-large {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .splash-name {
+        font-size: 2rem;
+    }
+    
+    .splash-bio {
+        font-size: 1rem;
+    }
+    
+    /* 11. 模态框调整 */
+    .close-modal {
+        top: 15px;
+        right: 20px;
+        font-size: 3rem;
+    }
+}
+
+/* 超小屏设备（小于 480px） */
+@media screen and (max-width: 480px) {
+    .content-wrapper {
+        padding-left: 50px; /* 进一步减小左边距 */
+    }
+    
+    .section-nav {
+        transform: translateY(-50%) scale(0.7);
+        right: 5px;
+    }
+    
+    .carousel-3d-wrapper {
+        width: 250px;
+    }
+    
+    .carousel-3d-container {
+        height: 200px;
+    }
+    
+    .uni-name {
+        font-size: 1.5rem;
+    }
+    
+    /* 隐藏目录线上的文字提示，只留圆点 */
+    .dot-tooltip {
+        display: none;
+    }
+}
+
+/* 平板设备（768px - 1024px） */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .content-wrapper {
+        padding: 30px 40px 30px 120px;
+        max-width: 90%;
+    }
+    
+    .carousel-3d-wrapper {
+        width: 600px;
+    }
+    
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr); /* 平板显示2列 */
+    }
+}
+
         
